@@ -36,19 +36,17 @@ ggplot(aes(x=vs, y=mpg, fill = vs), data = mtcars) +
   theme(legend.position="none")
 
 #create a histogram of weight
-ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.03)
+ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.5)
 
 #add title
-ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.03)+
+ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.5)+
   ggtitle("Distribution of car weight")
 
 #add color to histogram 
-ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.03)+
-  ggtitle("Distribution of car weight") + 
-  geom_histogram(color="blue", fill="pink")
+ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.5, color="blue", fill="pink") +
+  ggtitle("Distribution of car weight")
 
 #change axis name
-ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.03) +
-ggtitle("Distribution of car weight") +labs(x = "Weight", y = "Number of Cars") + 
-  geom_histogram(color="blue", fill="pink")
- 
+ggplot(aes(x=wt),data=mtcars) + geom_histogram(binwidth=0.5, color="blue", fill="pink") +
+ggtitle("Distribution of car weight") +
+  labs(x = "Weight", y = "Number of Cars") 
