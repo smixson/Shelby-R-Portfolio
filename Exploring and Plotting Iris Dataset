@@ -12,7 +12,7 @@ print(iris$Sepal.Width)
 unique(iris$Sepal.Width)
 unique(iris$Species)
 
-# basic computations 
+# basic functions 
 sum(iris$Sepal.Length)
 mean(iris$Sepal.Length)
 
