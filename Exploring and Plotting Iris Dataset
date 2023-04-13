@@ -1,0 +1,20 @@
+# read a built-in dataset 
+library (datasets)
+data(iris)
+View(iris) 
+
+# explore iris dataset 
+print(row.names(iris))
+print(colnames(iris))
+print(iris$Sepal.Width)
+
+# view unique data points
+unique(iris$Sepal.Width)
+unique(iris$Species)
+
+# basic computations 
+sum(iris$Sepal.Length)
+mean(iris$Sepal.Length)
+
+# plot a variable
+plot(iris$Sepal.Width)
